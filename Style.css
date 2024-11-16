@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+}
+
+.nev{
+  display: flex;
+  background-color: #f7fbfc49;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: #769FCD;
+  padding: 1.3rem;
+  cursor: pointer;
+}
+
+.menu{
+  margin-top: 2rem;
+}
+
+.menu > a{
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: #355274;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.menu :hover{
+  color: #deeaec;
+  background-color: #678db9;
+  border-radius: 2rem;
+  padding: 0.25rem;
+}
+
+.contener{
+  display: flex;
+  height: 85vh;
+  width: 100vw;
+  background-color: #F7FBFC;
+}
+
+.info{
+  height: 50%;
+  width: 40%;
+  color: #769FCD;
+  font-size: 2rem;
+  margin-left: 15rem;
+  margin-top: 20rem;
+}
+
+h2{
+  font-weight: bolder;
+  color:#331D2C;
+  
+}
+
+.hi{
+  /* color: #331D2C; */
+  color: rgb(6, 6, 87);
+}
+
+p{
+  font-weight: 100;
+  margin-left: 2rem;
+  color: #f5a5a5;
+}
+
+.me{
+  margin-top: 2rem;
+}
+
+.img{
+  height: 100%;
+  width: 40%;
+  
+}
+
+.image{
+  margin-top: 20rem;
+}
+
+.About{
+  height: 800px;
+  width: 100%;
+  background-color: #F7FBFC;
+}
+
+.About > h2{
+  text-decoration: underline;
+  margin-top: 20rem;
+  text-align: center;
+  padding: 70px;
+  font-size: 3rem;
+  color: #769FCD;
+}
+
+.About > p{
+  /* color: #769FCD; */
+  color: #673147;
+  margin: 8rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project{
+  
+  height: 900px;
+  width: 100%;
+  background-color: #F7FBFC;
+}
+
+.mywork{
+  float: left;
+  border: 1rem solid #deeaec;
+  border-radius: 1.5rem;
+  height: 25rem;
+  width: 40rem;
+}
+
+.work > p{
+   font-size: 1.5rem;
+   padding: 9rem;
+   padding-left: 2rem;
+   color: #6080B6;
+}
+
+span{
+  font-weight: 900;
+  color: #331D2C;
+}
+
+.mywork1{
+  float: right;
+  border: 1rem solid #deeaec;
+  border-radius: 1.5rem;
+  height: 25rem;
+  width:40rem;
+}
+
+
+.project > h2{
+  font-size: 3rem;
+  text-align: center;
+  color: #769FCD;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+/* Contact Section */
+.container{
+  height: 70vh;
+  width: 100vw;
+  background-color: #a2c0e2d5;
+}
+
+.container > h2{
+  text-align: center;
+  font-size: 3rem;
+  color: #191970;
+  margin: 6rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.contact-form .form-field {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  padding: 12px 30px;
+  background-color: #769FCD;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+footer{
+  height: 10vh;
+  width: 100vw;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6082B6;
+}
+
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+  .nev {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .menu {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contener {
+    flex-direction: column;
+    margin-left: 30%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .info {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .img {
+    width: 40%;
+  }
+
+  .image {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .About > h2 {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .About > p {
+    margin: 1rem 2rem;
+    margin-bottom: 10rem;
+    font-size: 1rem;
+  }
+
+  .work {
+    display: block;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .mywork, .mywork1 {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin:  auto;
+  }
+}
+
